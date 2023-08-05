@@ -1,0 +1,191 @@
+/* certificate_style.css */
+
+.certificate{
+    justify-content: center;
+}
+.certificate-container{
+height: 520px;
+  width: 738px;
+  background-color: #897A59;
+}
+.inner-container{
+    position: absolute;
+    height:477px;
+    width:687px;
+    margin-left: 23px;
+    margin-right: 23px;
+    top:30px;
+    bottom: 2px;;
+    background-color: #fffdf9;
+}
+
+#coi{
+    font-family: 'Prata', serif;
+    font-size: 27.8px;
+    color: #897A59;
+    margin-left: 170px;
+    padding-top: 67px;
+    padding-bottom: 0px;
+    margin-bottom: 0%;
+    letter-spacing: 1px;
+}
+#this{
+    font-family: 'Lora', serif;
+    font-size: 15px;
+    color: #897A59;
+    font-style: italic;
+    margin-left: 255px;
+    margin-top: 10px;
+    letter-spacing: 1.5px;
+}
+.recipient-name {
+    position: absolute;
+    top: 150px;
+    left: 220px;
+    font-family: 'Prata', serif;
+    font-size: 35.8px;
+    letter-spacing: 1.5px;
+    color: #897A59;
+    font-style: bold;
+}
+
+#for {
+    font-family: 'Lora', serif;
+    font-size: 11px;
+    color: #897A59;
+    font-style: italic;
+    letter-spacing: 1.5px;
+    position: absolute;
+    top:250px;
+    left:195px;
+
+}
+
+#left{
+    border-bottom: 1px solid #888;
+    width:20%;
+    position: absolute;
+    top: 363px;
+    left: 50px;
+}
+#right{
+    border-bottom: 1px solid #888;
+    width:20%;
+    position: absolute;
+    top: 363px;
+    left: 500px;
+}
+#center{
+    border-bottom: 1px solid #888;
+    width:20%;
+    position: absolute;
+    top: 363px;
+    left: 280px;
+}
+
+.certificate-id {
+    position: absolute;
+    top: 335px;
+    left: 65px;
+}
+#image{
+    position: absolute;
+    top: 320px;
+    left: 280px;
+    max-width: 120px;
+}
+#date{
+    position: absolute;
+    top: 335px;
+    left: 520px;
+}
+
+#logo{
+    position: absolute;
+    top: 10px;
+    left: 205px;
+    max-width: 280px;
+}
+#label-for-id{
+    font-family: 'Lora', serif;
+    font-size: 13px;
+    color: #897A59;
+    font-style: italic;
+    letter-spacing: 1.5px;
+    position: absolute;
+    top:368px;
+    left:70px;
+}
+#label-for-date{
+    font-family: 'Lora', serif;
+    font-size: 13px;
+    color: #897A59;
+    font-style: italic;
+    letter-spacing: 1.5px;
+    position: absolute;
+    top:368px;
+    left:555px;
+}
+#label-for-name{
+    font-family: 'Lora', serif;
+    font-size: 15px;
+    color: #897A59;
+    font-style: italic;
+    letter-spacing: 1.5px;
+    position: absolute;
+    top:365px;
+    left:300px;
+}
+#label-for-title{
+    font-family: 'Lora', serif;
+    font-size: 11px;
+    color: #897A59;
+    font-style: italic;
+    letter-spacing: 1.5px;
+    position: absolute;
+    top:390px;
+    left:300px;
+}
+
+#label-for-verify{
+    font-family:'Arimo', sans-serif;
+    font-size: 8px;
+    color: #897A59;
+    letter-spacing: 1.5px;
+    position: absolute;
+    top:440px;
+    left:160px;
+}
+
+#decor-top-left{
+    position: absolute;
+    top: -25px;
+    left: -25px;
+    max-width: 100px;
+    transform: rotate(190deg) scaleX(-1);
+
+}
+#decor-top-right{
+    position: absolute;
+    top: -15px;
+    left: 620px;
+    max-width: 100px;
+    transform: rotate(190deg);
+
+}
+#decor-bottom-left{
+    position: absolute;
+    top: 405px;
+    left: -25px;
+    max-width: 100px;
+    transform: rotate(180deg);
+
+}
+#decor-bottom-right{
+    position: absolute;
+    top: 405px;
+    left: 618px;
+    max-width: 100px;
+    transform: rotate(0deg) scaleX(-1);
+
+}

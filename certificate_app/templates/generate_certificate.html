@@ -1,0 +1,17 @@
+<!-- certificate_app/templates/generate_certificate.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Certificate Generator</title>
+</head>
+<body>
+    <h1>Certificate Generator</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="recipient_name">Recipient Name:</label>
+        <input type="text" id="recipient_name" name="recipient_name">  <!-- Make sure the name attribute is set correctly -->
+        <input type="submit" value="Generate Certificate">
+    </form>
+    <br>
+</body>
+</html>

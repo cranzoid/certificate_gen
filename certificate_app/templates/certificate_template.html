@@ -1,0 +1,46 @@
+<!-- certificate_template.html -->
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Certificate Template</title>
+    <link rel="stylesheet" href="{% static 'css/certificate_style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo&family=Lora:ital@1&family=Prata&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="certificate">
+        <div class="certificate-container">
+            
+        <!--<p class="recipient-name">Recipient Name: {{ recipient_name }}</p>
+        <p class="certificate-id">Certificate ID: {{ certificate_id }}</p>-->
+    </div>
+
+    <div class="inner-container">
+        <div class="certificate-header">
+            <img id="logo" src="{% static 'images/bannermain.png'%}">
+            <img id="decor-top-left" src="{% static 'images/decor3.png'%}">
+            <img id="decor-top-right" src="{% static 'images/decor3.png'%}">
+            <img id="decor-bottom-left" src="{% static 'images/decor3.png'%}">
+            <img id="decor-bottom-right" src="{% static 'images/decor3.png'%}">
+            <p id="coi">Certificate of Internship</p>
+                    <p id ="this">This is presented to</p>
+                    <h3 class="recipient-name">{{ certificate.recipient_name }}</h3>
+                    <p id="for"> who has completed one month internship program <br> as a <b>Web Developer</b>
+                        at <b>The Learning Artistry</b> <br> from 3 July to 3 August with impressive work results.</p>
+                    <hr id="left">
+                    <p class="certificate-id">{{ certificate.certificate_id }}</p>
+                    <hr id="center">
+                    <img id="image" src="{% static 'images/sign2.png'%}">
+                    <hr id="right">
+                    <p id="date">3 August 2023</p>
+                    <p id="label-for-verify">The Certificate ID can be verified at <a class="link" href="www.thelearningartistry.com/verify">www.thelearningartistry.com/verify</a> </p>
+                    <p id="label-for-id">Certificate ID</p>
+                    <p id="label-for-name"> Bhawna Lal </p>
+                    <p id="label-for-title">CEO & Founder</p>
+                    <p id="label-for-date">Date</p>
+            </div>
+        </div>
+    </body>
+</html>
