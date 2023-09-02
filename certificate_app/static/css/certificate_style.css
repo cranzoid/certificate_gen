@@ -167,8 +167,8 @@ height: 520px;
 }
 #picture{
     position: absolute;
-    top: -8px;
-    left: 10px;
+    top: -6px;
+    left: 25px;
     max-width: 100px;
 }
 
