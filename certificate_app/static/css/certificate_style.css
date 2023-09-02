@@ -165,6 +165,13 @@ height: 520px;
     transform: rotate(190deg) scaleX(-1);
 
 }
+#picture{
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    max-width: 100px;
+}
+
 #decor-top-right{
     position: absolute;
     top: -15px;
