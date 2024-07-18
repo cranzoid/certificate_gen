@@ -28,7 +28,7 @@ SECRET_KEY = os.getenv("DJANGO_SECRET_KEY",get_random_secret_key())
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv("DEBUG", "False") == "True"
 
-ALLOWED_HOSTS = os.getenv("DJANGO_ALLOWED_HOSTS","127.0.0.1,localhost,certificate.thelearningartistry.com,www.thelearningartistry.com,www.certificate.thelearningartistry.com").split(",")
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -77,26 +77,7 @@ WSGI_APPLICATION = 'certificate_generator.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-if os.getenv("DATABASE_URL","") != "":
-    r=urlparse(os.environ.get("DATABASE_URL"))
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME': os.path.relpath(r.path,"/"),
-            'USER': r.username,
-            'PASSWORD': r.password,
-            'HOST': r.hostname,
-            'PORT': r.port,
-            "OPTIONS": {"sslmode": "require"},
-        }
-    }
-else:
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': BASE_DIR / 'db.sqlite3',
-        }
-    }
+Database
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
